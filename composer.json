@@ -1,0 +1,17 @@
+{
+    "name": "root/zenvia-php",
+    "description": "Biblioteca PHP para integração com a API 2.0 da Zenvia",
+    "require": {
+        "php": "5.2"
+    },
+    "require-dev": {
+        "php": "5.2"
+    },
+    "authors": [
+        {
+            "name": "Vitor Siqueira",
+            "email": "vitor@nitro2code.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}
