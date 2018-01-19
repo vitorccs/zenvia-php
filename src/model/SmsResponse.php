@@ -1,4 +1,7 @@
 <?php
+
+namespace Zenvia\Model;
+
 /**
  * Classe que representa uma resposta contendo o status de uma mensagem.
  */

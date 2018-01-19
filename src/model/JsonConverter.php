@@ -1,5 +1,7 @@
 <?php
 
+namespace Zenvia\Model;
+
 /**
  * Classe responsável por fazer as conversões para o formato json utilizados no webservice.
  */

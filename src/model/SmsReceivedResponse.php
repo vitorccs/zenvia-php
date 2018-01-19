@@ -1,5 +1,7 @@
 <?php
 
+namespace Zenvia\Model;
+
 /**
  * Classe que representa uma resposta contendo um conjunto de mensagens recebidas.
  */

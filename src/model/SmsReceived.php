@@ -1,5 +1,7 @@
 <?php
 
+namespace Zenvia\Model;
+
 /**
  * Classe que representa uma mensagem recebida.
  */
