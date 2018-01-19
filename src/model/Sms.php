@@ -1,5 +1,7 @@
 <?php
 
+namespace Zenvia\Model;
+
 /**
  * Representa uma mensagem SMS.
  */

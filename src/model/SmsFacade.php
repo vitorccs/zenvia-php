@@ -1,4 +1,7 @@
 <?php
+
+namespace Zenvia\Model;
+
 /** 
  * Classe que serve como fachada para acesso ao webservice de envio e consulta de mensagens.   
  */
