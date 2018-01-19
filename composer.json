@@ -1,17 +1,25 @@
 {
-    "name": "root/zenvia-php",
-    "description": "Biblioteca PHP para integração com a API 2.0 da Zenvia",
-    "require": {
-        "php": "5.2"
-    },
-    "require-dev": {
-        "php": "5.2"
-    },
+    "name": "vitorccsiqueira/zenvia-php",
+   	"type": "project",
+  	"homepage": "http://zenvia.com",
+  	"keywords": ["zenvia", "sms"],
+    "description": "PHP SDK Zenvia API 2.0",
     "authors": [
         {
-            "name": "Vitor Siqueira",
-            "email": "vitor@nitro2code.com"
+            "name": "Zenvia",
+            "email": "contato@zenvia.com"
         }
     ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "require-dev": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "HelloWorld": "src/"
+        }
+    },
     "minimum-stability": "stable"
 }
