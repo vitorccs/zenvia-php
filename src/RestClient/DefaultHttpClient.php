@@ -23,7 +23,7 @@ class DefaultHttpClient implements HttpClient{
         }catch(Exception $ex){ 
 			$this->closeSocket($httpSocket);
             $exceptionMessage='Http Request Failed. Request['.$request.'], Response['.$response.'].';            
-            throw new Exception($exceptionMessage, null, $ex);   
+            throw new \Exception($exceptionMessage, null, $ex);
         }
         return $response;
     }
@@ -53,7 +53,7 @@ class DefaultHttpClient implements HttpClient{
 			$socket = fsockopen($host, $port, $errorCode, $errorDescription, $timeout);
 		}	
         if (!is_resource($socket)) {
-            throw new RuntimeException($errorCode . " (" . $errorDescription . ")");
+            throw new \RuntimeException($errorCode . " (" . $errorDescription . ")");
         }        
         return $socket;
     }
@@ -71,7 +71,7 @@ class DefaultHttpClient implements HttpClient{
     
     private function checkSocket($socket){
          if(!is_resource($socket)){
-            throw new RuntimeException("Invalid socket resource.");
+            throw new \RuntimeException("Invalid socket resource.");
         }        
     }
     
@@ -113,7 +113,7 @@ class DefaultHttpClient implements HttpClient{
             $responseContent .= $line;
         }		
         if($responseContent==null || trim($responseContent) == "" ){
-            throw new RuntimeException("Resource requested not found. Try change the request path.");
+            throw new \RuntimeException("Resource requested not found. Try change the request path.");
         }
         return $responseContent;
     }    

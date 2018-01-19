@@ -62,7 +62,7 @@ class RestClient {
         try{
             $response = $this->httpClient->makeRequest($request);  
         }catch(Exception $ex){            
-            throw new RuntimeException($ex);
+            throw new \RuntimeException($ex);
         }
         return $response;
     }
