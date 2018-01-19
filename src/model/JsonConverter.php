@@ -50,7 +50,7 @@ class JsonConverter {
      * @return string
      */
     private static function getJsonBase($sms, $aggregateId=null){
-        $obj = new stdClass();       
+        $obj = new \stdClass();
         if($sms->getId()!=null){
             $obj->id=$sms->getId(); 
         } 

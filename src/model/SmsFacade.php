@@ -2,6 +2,8 @@
 
 namespace Zenvia\Model;
 
+use Zenvia\RestClient\RestClient;
+
 /** 
  * Classe que serve como fachada para acesso ao webservice de envio e consulta de mensagens.   
  */
@@ -219,7 +221,7 @@ class SmsFacade {
     private function checkResponse($response){
         if($response->getHttpCode()>= 400){
             $exceptionMessage=$response->getHttpCode().' - '.$response->getHttpDescription()." \nServer Response\n".$response->getBody()."."."\nApi Request\n[".$response->getRequestOrigin();            
-            throw new RuntimeException($exceptionMessage);   
+            throw new \RuntimeException($exceptionMessage);
         }
     }
       
