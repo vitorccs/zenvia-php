@@ -1,5 +1,5 @@
 # zenvia-php
-Biblioteca PHP produzida pela Zenvia para integração com sua API 2.0. Eles fornecem por download direto, por isso estamos colocando no GitHub para fazer controle de versionamento.
+Biblioteca PHP produzida pela Zenvia para integração com sua API 2.0. Colocamos no GitHub para fazer controle de versionamento e adicionar suporte PSR-4.
 
 # Serviços da API
 * Envio de um único SMS
